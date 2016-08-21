@@ -22,12 +22,20 @@ url('../fonts/facebook-letter-faces.ttf') format('truetype');
 }
 
 body {
-    background: url('../img/background.jpg') fixed top no-repeat;
     background-color: #ebebeb;
     background-size: cover;
     color: #fff;
     font-family: HelveticaNeue, Tahoma, sans-serif;
     font-size: 14px;
+}
+
+.wrapper {
+    width: 1215px;
+    height: 1064px;
+    margin: 0 auto;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: -357px 35px;
 }
 
 .clearfix:after {
@@ -43,8 +51,7 @@ header {
 }
 
 .upper-line {
-    width: 1124px;
-    margin: 0 auto;
+    margin-right: 23px;
 }
 
 header nav,
@@ -89,7 +96,7 @@ header nav,
 }
 
 /* -- flag icon */
-.offer a::before {
+.offer a:before {
     display: block;
     position: absolute;
     top: 50%;
@@ -104,7 +111,7 @@ header nav,
 /* - menu part */
 
 /* -- vertical blue separator */
-.menu::before {
+.menu:before {
     display: block;
     width: 10px;
     height: 32px;
@@ -135,16 +142,13 @@ header nav,
 /* content */
 
 .content {
-    width: 1124px;
-    margin: 0 auto;
-    padding-bottom: 50px;
+    margin: 213px 0 0 353px;
 }
 
 /* signup form */
 
 .form {
     width: 560px;
-    margin: 213px auto 0;
     padding-bottom: 21px;
     background-color: rgba(0, 0, 0, .6);
 }
@@ -187,7 +191,7 @@ header nav,
 }
 
 /* -- vertical separator */
-.fb-login::before {
+.fb-login:before {
     position: absolute;
     top: 10px;
     left: 37px;
@@ -199,7 +203,7 @@ header nav,
 }
 
 /* -- "f" icon */
-.fb-login a::before {
+.fb-login a:before {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -212,7 +216,7 @@ header nav,
 }
 
 /* -- ">" icon */
-.fb-login a::after {
+.fb-login a:after {
     position: absolute;
     top: 50%;
     right: 26px;
@@ -231,8 +235,8 @@ header nav,
 }
 
 /* -- separator lines*/
-.or-sep::before,
-.or-sep::after {
+.or-sep:before,
+.or-sep:after {
     display: inline-block;
     width: 121px;
     height: 0;
